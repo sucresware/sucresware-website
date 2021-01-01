@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>SucresWare</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Et vous, combien de sucres vous prenez dans votre café ?">
+
+    <link href="https://fonts.googleapis.com/css?family=Inter:200,400,600" rel="stylesheet">
+    <link rel="icon" href="/favicon.png">
+
+    <script>
+        let defaultTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        let theme = localStorage.theme || defaultTheme;
+        document.querySelector('html').setAttribute('data-theme', theme)
+    </script>
+</head>
+
+<body class="font-sans antialiased bg-background-default text-on-background-default">
+    <app id="app" />
+</body>
+
+</html>
